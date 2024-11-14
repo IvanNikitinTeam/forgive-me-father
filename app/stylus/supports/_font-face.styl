@@ -1,0 +1,21 @@
+m-font-face( $font-family = "Arial", $file-path = "", $local-name = "", $weight, $style = normal) {
+	@font-face {
+		font-family: $font-family;
+		src: url($file-path + '.eot');
+		src: local($local-name),
+					url($file-path + '.eot?#iefix') format('embedded-opentype'),
+					url($file-path + '.woff2') format('woff2'),
+					url($file-path + '.woff') format('woff'),
+					url($file-path + '.ttf') format('truetype');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}
+
+
+m-font-face("SpaceMono", "../fonts/SpaceMono/SpaceMono-Regular", "SpaceMono-Regular", normal);
+m-font-face("SpaceMono", "../fonts/SpaceMono/SpaceMono-Bold", "SpaceMono-Bold", 700);
+m-font-face("KodeMono", "../fonts/KodeMono/KodeMono-Bold", "KodeMono-Bold", 700);
+// m-font-face("SFProDisplay", "../fonts/SFProDisplay/SFProDisplay-Regular", "SFProDisplay-Medium", 500);
+//m-font-face("SFProDisplay", "../fonts/SFProDisplay/SFProDisplay-Regular", "SFProDisplay-Heavy", 800);

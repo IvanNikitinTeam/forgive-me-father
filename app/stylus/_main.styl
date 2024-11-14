@@ -1,0 +1,112 @@
+//main styles
+.main-wrapper
+	padding 0
+	min-width $min-width
+	width 100%
+	position relative
+	overflow hidden
+	min-height 100%
+
+.wrapper
+	min-width $min-width
+	max-width $max-width
+	padding 0 40px 0 40px
+	margin 0 auto
+	position relative
+
+
+
+.hero
+	height 100vh
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	&__content
+		position relative
+		z-index 3
+		padding-bottom 3rem
+		padding-top 10rem
+		// background-color #000
+	&__timer
+		display flex
+		justify-content center
+		margin-bottom 2.75rem
+		&-item
+			&-num
+				margin-bottom 0.75rem
+				text-align: center;
+				font-family $kodemono
+				font-size: 7.5rem;
+				font-weight: 700;
+				line-height 1
+			&-ttl
+				opacity 0.8
+				color: #B0C8DD;
+				text-align: center;
+				font-size: 1.125rem;
+				line-height 1
+				letter-spacing: 0.5rem;
+				text-transform: uppercase;
+		&-dots
+			width 3.75rem
+			height 100%
+			position relative
+			&:before,
+			&:after
+				content ''
+				height: 1.125rem;
+				width: 1.125rem;
+				background-color #fff
+				position absolute
+				left 1.2rem
+			&:before
+				top 2.6rem
+			&:after
+				top 4.7rem
+	&__btn
+		display: flex;
+		padding: 0.625rem 1.25rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.125rem;
+		background-color #8BCE94
+		color: #000;
+		font-size: 1.5rem;
+		line-height 1
+		letter-spacing: -0.125rem;
+		&:hover
+			background-color #fff
+		.symbols
+			letter-spacing 0.5rem
+			opacity 0.5
+		.text
+			margin-right 0.5rem
+		&-wrap
+			display flex
+			justify-content center
+
+
+
+.jesus-bg,
+.circles-bg
+	font-size: 0.5rem;
+	line-height 1.2
+	letter-spacing: 0.04688rem;
+	background-image: linear-gradient(180deg, #CAE6FF, #3A3F46);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip text
+	opacity 0.5
+	position absolute
+	left 50%
+	top 5rem
+	transform translateX(-50%)
+	user-select none
+
+
+.circles-bg
+	top -23rem
+	left calc(50% + 3.5rem)
+	font-size 0.4rem
+	line-height 1.4
